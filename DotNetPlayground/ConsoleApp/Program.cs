@@ -1,51 +1,57 @@
 ﻿using ConsoleApp.Collections.CustomCollection;
 using ConsoleApp.Collections.CustomCollectionWithInitializer;
 using ConsoleApp.Collections.Indexers;
+using ConsoleApp.Multithreading;
 
-var customEnumerableCollection = new CustomCollection(["aaa", "bbb", "ccc"]);
-var customEnumerableCollectionInitializer = new CustomCollectionWithInitializer { "aaa", "bbb", "ccc" };
+//var customEnumerableCollection = new CustomCollection(["aaa", "bbb", "ccc"]);
+//var customEnumerableCollectionInitializer = new CustomCollectionWithInitializer { "aaa", "bbb", "ccc" };
 
-var enumerator = customEnumerableCollection.GetEnumerator();
-var enumeratorInitializer = customEnumerableCollectionInitializer.GetEnumerator();
+//var enumerator = customEnumerableCollection.GetEnumerator();
+//var enumeratorInitializer = customEnumerableCollectionInitializer.GetEnumerator();
 
-while (enumerator.MoveNext())
-{
-    Console.WriteLine(enumerator.Current);
-}
+//while (enumerator.MoveNext())
+//{
+//    Console.WriteLine(enumerator.Current);
+//}
 
-while (enumeratorInitializer.MoveNext())
-{
-    Console.WriteLine(enumeratorInitializer.Current);
-}
+//while (enumeratorInitializer.MoveNext())
+//{
+//    Console.WriteLine(enumeratorInitializer.Current);
+//}
 
-// Collections -> Indexers -> PairOfArrays
+//// Collections -> Indexers -> PairOfArrays
 
-var ints = new int[] { 1, 2, 3 };
-var strings = new string[] { "a", "b", "c" };
+//var ints = new int[] { 1, 2, 3 };
+//var strings = new string[] { "a", "b", "c" };
 
-var valueTuples = new PairOfArrays<int, string>(ints, strings);
+//var valueTuples = new PairOfArrays<int, string>(ints, strings);
 
-var result = valueTuples[2, 1];
+//var result = valueTuples[2, 1];
 
-Console.WriteLine(result);
+//Console.WriteLine(result);
 
-// Collections -> Indexers -> CustomIndexer
+//// Collections -> Indexers -> CustomIndexer
 
-var customIndexer = new CustomIndexer(["a", "b", "c"]);
-var firstString = customIndexer[1];
+//var customIndexer = new CustomIndexer(["a", "b", "c"]);
+//var firstString = customIndexer[1];
 
-Console.WriteLine(firstString);
+//Console.WriteLine(firstString);
 
-// Ref
+//// Ref
 
-var number = 1;
-void AddToNumber(ref int number) => number++;
-AddToNumber(ref number);
+//var number = 1;
+//void AddToNumber(ref int number) => number++;
+//AddToNumber(ref number);
 
-Console.WriteLine(number);
+//Console.WriteLine(number);
 
-// Out
+//// Out
 
-void ProduceText(out string text) => text = "Some text";
-ProduceText(out var produced);
-Console.WriteLine(produced);
+//void ProduceText(out string text) => text = "Some text";
+//ProduceText(out var produced);
+//Console.WriteLine(produced);
+
+// Multithreading
+
+//Requests.Run();
+ThreadSafetyExclusiveLock.Run();
