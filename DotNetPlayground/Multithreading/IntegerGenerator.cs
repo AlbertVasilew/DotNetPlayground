@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace Multithreading.DivideAndConquer
+namespace Multithreading.Benefiting
 {
     public interface IIntegerGenerator
     {
@@ -79,7 +79,7 @@ namespace Multithreading.DivideAndConquer
             {
                 thread.Join();
             }
-            
+
             Console.WriteLine($"Generate Time: {stopWatch.ElapsedMilliseconds}");
             return integers.Count;
         }

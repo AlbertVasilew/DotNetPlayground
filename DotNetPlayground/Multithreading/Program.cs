@@ -1,5 +1,9 @@
-﻿using Multithreading.DivideAndConquer;
+﻿using Multithreading.Benefiting;
 using System.Diagnostics;
+
+/* This PROJECT demonstrates primary benefits of multithreading:
+1) Divide & Conquer
+2) Offload long running tasks */
 
 var syncGenerating = new IntegerGenerator(1000000000);
 var asyncGenerating = new IntegerGenerator(1000000000);
@@ -25,4 +29,4 @@ var asyncTask = Task.Run(async () =>
 await Task.WhenAll(syncTask, asyncTask);
 
 Console.WriteLine("Both generations completed in parallel (offload long running tasks)");
-Console.WriteLine($"Estimation Time: {stopwatch.ElapsedMilliseconds}");
+Console.WriteLine($"Total Estimation Time: {stopwatch.ElapsedMilliseconds}");
