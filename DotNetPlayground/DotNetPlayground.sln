@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppTests", "ConsoleA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Multithreading.Benefiting", "Multithreading\Multithreading.Benefiting.csproj", "{27B57998-0D73-49F0-AEBB-0EDC3B6E9000}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multithreading.Deadlocks", "Multithreading.Deadlocks\Multithreading.Deadlocks.csproj", "{55B3DC43-3842-4248-A60D-9CA9F78D0B1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Multithreading.Deadlocks", "Multithreading.Deadlocks\Multithreading.Deadlocks.csproj", "{55B3DC43-3842-4248-A60D-9CA9F78D0B1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multithreading.Cancellation", "Multithreading.Cancellation\Multithreading.Cancellation.csproj", "{96758BCC-896C-440B-8E98-75EB7D06E060}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{55B3DC43-3842-4248-A60D-9CA9F78D0B1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55B3DC43-3842-4248-A60D-9CA9F78D0B1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55B3DC43-3842-4248-A60D-9CA9F78D0B1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96758BCC-896C-440B-8E98-75EB7D06E060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96758BCC-896C-440B-8E98-75EB7D06E060}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96758BCC-896C-440B-8E98-75EB7D06E060}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96758BCC-896C-440B-8E98-75EB7D06E060}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
