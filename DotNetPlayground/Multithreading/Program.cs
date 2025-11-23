@@ -1,16 +1,13 @@
 ﻿using Multithreading.Benefiting;
-using System.Diagnostics;
 
 /* This PROJECT demonstrates primary benefits of multithreading:
 1) Divide & Conquer
 2) Offload long running tasks */
 
-var syncGenerating = new IntegerGenerator(1000000000);
-var asyncGenerating = new IntegerGenerator(1000000000);
+var syncGenerating = new IntegerGenerator(100000000);
+var asyncGenerating = new IntegerGenerator(100000000);
 
-var stopwatch = Stopwatch.StartNew();
-
-var syncTask = Task.Run(() =>
+var thread1 = new Thread(() =>
 {
     var count = syncGenerating.GenerateSync();
     Console.WriteLine($"[SYNC] Integers: {count}");
@@ -18,7 +15,9 @@ var syncTask = Task.Run(() =>
     Console.WriteLine($"[SYNC] Sum: {sum}");
 });
 
-var asyncTask = Task.Run(async () =>
+thread1.Start();
+
+var thread2 = new Thread(() =>
 {
     var count = asyncGenerating.GenerateAsync();
     Console.WriteLine($"[ASYNC] Integers: {count}");
@@ -26,7 +25,7 @@ var asyncTask = Task.Run(async () =>
     Console.WriteLine($"[ASYNC] Sum: {sum}");
 });
 
-await Task.WhenAll(syncTask, asyncTask);
+thread2.Start();
 
-Console.WriteLine("Both generations completed in parallel (offload long running tasks)");
-Console.WriteLine($"Total Estimation Time: {stopwatch.ElapsedMilliseconds}");
+Console.WriteLine("Main thread is not blocked");
+Console.ReadLine();
