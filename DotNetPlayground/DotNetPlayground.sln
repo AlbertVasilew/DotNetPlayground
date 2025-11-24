@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Multithreading.Deadlocks", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multithreading.Cancellation", "Multithreading.Cancellation\Multithreading.Cancellation.csproj", "{96758BCC-896C-440B-8E98-75EB7D06E060}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multithreading.Tasks.OffloadMainThread", "Multithreading.Tasks.OffloadMainThread\Multithreading.Tasks.OffloadMainThread.csproj", "{E8C2759D-2512-409C-91F2-2628AF488E3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{96758BCC-896C-440B-8E98-75EB7D06E060}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96758BCC-896C-440B-8E98-75EB7D06E060}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96758BCC-896C-440B-8E98-75EB7D06E060}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8C2759D-2512-409C-91F2-2628AF488E3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8C2759D-2512-409C-91F2-2628AF488E3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8C2759D-2512-409C-91F2-2628AF488E3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8C2759D-2512-409C-91F2-2628AF488E3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
