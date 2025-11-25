@@ -11,11 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Multithreading.Benefiting",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Multithreading.Deadlocks", "Multithreading.Deadlocks\Multithreading.Deadlocks.csproj", "{55B3DC43-3842-4248-A60D-9CA9F78D0B1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multithreading.Cancellation", "Multithreading.Cancellation\Multithreading.Cancellation.csproj", "{96758BCC-896C-440B-8E98-75EB7D06E060}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Multithreading.Cancellation", "Multithreading.Cancellation\Multithreading.Cancellation.csproj", "{96758BCC-896C-440B-8E98-75EB7D06E060}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multithreading.Tasks.OffloadMainThread", "Multithreading.Tasks.OffloadMainThread\Multithreading.Tasks.OffloadMainThread.csproj", "{E8C2759D-2512-409C-91F2-2628AF488E3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Multithreading.Tasks.OffloadMainThread", "Multithreading.Tasks.OffloadMainThread\Multithreading.Tasks.OffloadMainThread.csproj", "{E8C2759D-2512-409C-91F2-2628AF488E3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multithreading.Tasks.HandlingExceptions", "Multithreading.Tasks.HandlingExceptions\Multithreading.Tasks.HandlingExceptions.csproj", "{A129904D-068D-48C6-A692-6B0A4F76C0FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Multithreading.Tasks.HandlingExceptions", "Multithreading.Tasks.HandlingExceptions\Multithreading.Tasks.HandlingExceptions.csproj", "{A129904D-068D-48C6-A692-6B0A4F76C0FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multithreading.AsyncAwait", "Multithreading.AsyncAwait\Multithreading.AsyncAwait.csproj", "{F86A9BCC-A66E-470F-8DD4-98832D8EFF11}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{A129904D-068D-48C6-A692-6B0A4F76C0FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A129904D-068D-48C6-A692-6B0A4F76C0FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A129904D-068D-48C6-A692-6B0A4F76C0FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F86A9BCC-A66E-470F-8DD4-98832D8EFF11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F86A9BCC-A66E-470F-8DD4-98832D8EFF11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F86A9BCC-A66E-470F-8DD4-98832D8EFF11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F86A9BCC-A66E-470F-8DD4-98832D8EFF11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
