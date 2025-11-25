@@ -1,4 +1,6 @@
-﻿AsynchronousMethod();
+﻿Console.WriteLine($"Main Thread ID: {Thread.CurrentThread.ManagedThreadId}");
+
+AsynchronousMethod();
 
 Console.WriteLine($"End of program. Thread: {Thread.CurrentThread.ManagedThreadId}");
 Console.ReadLine();
@@ -15,10 +17,9 @@ async void AsynchronousMethod()
 
 async Task ApiCall()
 {
-    await Task.Run(() =>
-    {
-        Console.WriteLine($"Calling API ... Thread: {Thread.CurrentThread.ManagedThreadId}");
-        Thread.Sleep(2000);
-        Console.WriteLine($"API call finished. Thread: {Thread.CurrentThread.ManagedThreadId}");
-    });
+    await Task.Delay(1000);
+
+    Console.WriteLine($"Calling API ... Thread: {Thread.CurrentThread.ManagedThreadId}");
+    Thread.Sleep(2000);
+    Console.WriteLine($"API call finished. Thread: {Thread.CurrentThread.ManagedThreadId}");
 }
